@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scene</title>
+</head>
+<body>
+<div id="scene"></div>
+
+<script type="text/javascript" src="three.js"></script>
+<script>
+    function f() {
+        var scene = new THREE.Scene();
+
+        var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+        var render = new THREE.WebGLRenderer();
+        render.setClearColor(0xEEEEEE);
+        render.setSize(window.innerWidth, window.innerHeight);
+
+        var axes = new THREE.AxisHelper(20);
+        scene.add(axes);
+
+        var planeGeometry = new THREE.PlaneGeometry(60,20,1,1);
+        var planeMaterial = new THREE.MeshBasicMaterial({color:0xccccc});
+
+        var plane = THREE.MeshBasicMaterial
+    }
+</script>
+</body>
+</html>
